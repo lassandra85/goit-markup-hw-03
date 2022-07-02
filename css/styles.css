@@ -68,10 +68,14 @@ img{
 
 /* Header*/
 
+.page-header{
+    border-bottom: 1px solid var(--border-header);
+}
+
+
 .header-container{
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--border-header);
+    align-items: center; 
 }
 
 .header-nav{
@@ -155,6 +159,8 @@ img{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .order-title{
@@ -166,7 +172,6 @@ img{
     text-transform: uppercase;
     color: var(--white);
     width: 696px;
-    margin-top: 200px ;
 }
 
 .btn-order {
@@ -185,7 +190,7 @@ img{
     height: 50px;
     border-radius: 4px;
     margin-top: 30px;
-    margin-bottom: 200px;
+    border: none;
 }
 
 .btn-order:hover,
@@ -209,10 +214,6 @@ img{
 
 /**section "advantage" **/
 
-.advantage{
-    background-color: var(--about-);
-}
-
 
 .advantage-list{
     --items: 4;
@@ -230,13 +231,8 @@ img{
 
 /**section "about"**/
 
-.about-container{
-    margin-top: -94px;
-}
-
-
 .about{
-    background-color: var(--about-);
+    padding-top: 0px;
 }
 
 
@@ -293,14 +289,10 @@ img{
 /*footer*/
 .footer{
     background-color: var(--dark-bg-cl);
-}
-
-.container-footer{
-    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-    flex-direction: column;
 }
+
 
 .footer-accent {
     color: var(--white);
@@ -334,10 +326,7 @@ color:var(--foot);
 /*Portfolio*/
 
 /**main**/
-.main{
-    background-color: var(--about-bg);
-}
- 
+
 .all-list{
     display: flex;
     justify-content: center;
@@ -358,6 +347,7 @@ color:var(--foot);
     cursor: pointer;
     border-radius: 4px;
     padding: 6px 22px;
+    border: none;
 }
 
 .btn-list:hover,
